@@ -1,0 +1,10 @@
+/* src/App.css */
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', sans-serif;
+  background-color: black;
+}
+
+.App {
+  text-align: center;
+}

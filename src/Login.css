@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Sans MS', sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  background: url('/bg.jpeg') no-repeat center center; /* Update the path accordingly */
+  background-size: cover; /* Make sure the image covers the entire background */
+}
+
+.login-box {
+  background-color: rgba(0, 0, 0, 0.8); /* Black background with some transparency */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left; /* Align text to the left */
+  position: relative;
+  z-index: 1;
+  width: 300px; /* Set a fixed width for better alignment */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Optional: Add shadow for a better look */
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  text-align: center; /* Center the heading */
+}
+
+.role-selection {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.role-button {
+  background-color: #2196F3;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.role-button.active {
+  background-color: #1976D2;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-left: 20px;
+}
+
+.input-icon {
+  left: 4px;
+  margin-top: 10px;
+  position:absolute;
+  width: 24px;
+  height: 24px;
+  color: white; /* Changed to white */
+}
+
+input {
+  width: 100%; /* Make the input take the full width */
+  padding: 10px; /* Adjusted size */
+  background-color: black;
+  color: white;
+  border: 1px solid white; /* White outline */
+  border-radius: 5px;
+  font-family: 'Comic Sans MS', sans-serif;
+  font-size: 16px;
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+.password-wrapper {
+  position: relative;
+  width: 120%;
+  left: 5px;
+}
+
+.password-wrapper input {
+  width: calc(100% - 30px); /* Adjust width to fit within the container, accounting for the toggle icon */
+  padding: 10px;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 1000px;
+  top: 10%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid #3498db;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+}
+
+.login-button {
+  background-color: #2196F3;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  width: 100%; /* Make the button full width */
+}
+
+.signup-link {
+  margin-top: 15px;
+  text-align: center; /* Center align the signup link */
+}
+
+.signup-link a {
+  color: #2196F3;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+.social-media-signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup-button {
+  max-width: 240px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.signup-button img {
+  width: 100%;
+  height: auto;
+}
+
+
+.social-media-button {
+  background-color: #333; /* Dark background for the buttons */
+  border: none;
+  color: white;
+  padding: 10px;
+  margin: 0 5px; /* Space between buttons */
+  border-radius: 50%; /* Round shape */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px; /* Width of the round button */
+  height: 50px; /* Height of the round button */
+  font-size: 20px; /* Size of the icons */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.social-media-button:hover {
+  background-color: #555; /* Slightly lighter on hover */
+}
+
+.social-media-icon {
+  font-size: 24px; /* Adjust icon size if needed */
+}
+
+.separator {
+  text-align: center;
+  margin: 20px 0;
+  color: white;
+}
+
+.background-shapes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+
+@media (max-width: 768px) {
+  .login-box {
+    width: 80%; /* Adjust the width for smaller screens */
+  }
+
+  .role-selection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .role-button {
+    margin: 10px 0;
+  }
+}
